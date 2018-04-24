@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Stephen Tsoi-A-Sue</title>
+
+    <!-- css references -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">  
+    <link href="../static/css/bootstrap-grid.css" rel="stylesheet">
+    <link href="../static/css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body class='background'>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-head-foot fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">Stephen Tsoi-A-Sue</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item active navbar-right dropdown">
+                <a class="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Data Models</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown03">
+                  <a class="dropdown-item text" href="https://sleepy-coast-60721.herokuapp.com/">Belly Button Biodiversity Dashboard</a>
+                  <a class="dropdown-item text" href="#">Webscrape Mars Data</a>
+                  <a class="dropdown-item text" href="#">Lattitude Analysis</a>
+                  <a class="dropdown-item text" href="#">Predicting MVP w/ Machine Learning</a>
+                </div>
+            </li>
+            
+            <li class="nav-item active">
+              <a class="nav-link text" href="#">Contact</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <!-- Index page heading -->
+        <h1 class="my-4 text-center text">Lattitude Analysis</h1>
+        <hr>
+        <div class='row'>
+            <div class='col-md-12'>
+                    <p class='text'>In this study I analyze the relationship between the weather in different cities at varying latitudes.</p>
+                    <p class='text'>I utilized the <a href='https://github.com/wingchen/citipy' target="_blank">citipy</a> pyton package to gather a sample of city names and their geographic coordinates. With this data i was able to make requests to the <a href='https://openweathermap.org/api' target="_blank">OpenWeatherMap API</a> which contains realtime weather data.</p>
+                    <p class='text'>The data was pulled directly into a pandas dataframe from which plots were created showing the relationship of certain weather stats (Temperature, Humidity, Cloudiness, and Wind Speed) and the respective city lattitude.</p>                   
+                    <p class='text'>You can visit my <a href='https://github.com/stsoiasue/Whats_the-weather_like_-APIs-' target="_blank">github repository</a> for this project to view the code I used to gather and plot the data.</p>
+                    <p class='text'>Below are the plots which were generated and my analysis of the visuals.</p>
+                    <hr>
+            </div>
+        </div>
+        <!-- Index page content -->
+
+        <!-- row -->
+        <div class="row">
+
+            <div class="col-md-12 text-center">
+                <img class="img-fluid" src="../static/images/Temperature_v_Lattitude.png" alt="">
+                <p></p>
+                <p class='text'>The visual above shows temperature in relation to lattitude on 12/01/2017 when the data was pulled. There appears to be a curve formed with lower temperatures recorded at lattitudes further from the equator and higher lattitudes closer to the equator. Temperatures to the south of the equator seem to be higher than north which makes sense given the time of year this analysis was conducted.</p>
+            </div>
+
+        </div>
+        <hr>
+        <!-- /.row -->
+
+        <!-- /.row -->
+        <div class="row">
+
+            <div class="col-md-12 text-center">
+                <img class="img-fluid" src="../static/images/Humidity_v_Lattitude.png" alt="">
+                <p></p>
+                <p class='text'>The visual above shows humidity as a percentage in relation to lattitude. Humidity is the amount of water vapor present in the air. I did not see any significant realtionship between humidity and lattitude. It is interesting to see all but one of the datapoints is greater than 20% humidit. This suggests it is a rare occurence for there to be 0% humidity in a given area.</p>
+            </div>
+
+        </div>
+        <hr>
+        <!-- /.row -->
+
+        <!-- /.row -->
+        <div class="row">
+
+            <div class="col-md-12 text-center">
+                <img class="img-fluid" src="../static/images/Cloudiness_v_Lattitude.png" alt="">
+                <p></p>
+                <p class='text'>The visual above shows cloud cover (cloudiness) as a percentage of the sky obscured by clouds when observed from the respective lattitude. There does not appear to be any discernible trend in relation to lattitue but there are collections at high and low percentages on the plot. One might conclude cloudiness is a measure of extremities as the data shows it is either very cloudy or not cloudy at all. However, there is not enough evidence to support that claim in this data.</p>
+            </div>
+
+        </div>
+        <hr>
+        <!-- /.row -->
+
+        <!-- /.row -->
+        <div class="row">
+
+            <div class="col-md-12 text-center">
+                <img class="img-fluid" src="../static/images/Wind_Speed_v_Lattitude.png" alt="">
+                <p></p>
+                <p class='text'>The visual above shows wind speed measured in miles per hour (mph) in relation to lattitude. There does not appear to be a significant trend between wind speed and lattitude. However, on this particular day there were a few data points far north of the equator with higher wind speeds relative to the rest of the data.</p>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-4 bg-head-foot">
+      <div class="container">
+        <p class="m-0 text-center text-white">Brought to you by Stephen Tsoi-A-Sue</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+  </body>
+
+</html>

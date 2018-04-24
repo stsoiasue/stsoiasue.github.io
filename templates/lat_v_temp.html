@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Lattitude Analysis - Lat v. Temp</title>
+
+    <!-- css references -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">  
+    <link href="css/bootstrap-grid.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+    
+
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-head-foot fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Lattitude Analysis</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item active navbar-right dropdown">
+                <a class="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown03">
+                  <a class="dropdown-item" href="lat_v_temp.html">Lattitude v. Temperature</a>
+                  <a class="dropdown-item" href="lat_v_hum.html">Lattitude v. Humidity</a>
+                  <a class="dropdown-item" href="lat_v_cloud.html">Lattitude v. Cloudiness</a>
+                  <a class="dropdown-item" href="lat_v_wind.html">Lattitude v. Wind Speed</a>
+                </div>
+            </li>
+
+            <li class="nav-item active">
+              <a class="nav-link" href="comparison.html">Comparison</a>
+            </li>
+
+            <li class="nav-item active">
+              <a class="nav-link" href="data.html">Data</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Index page heading -->
+      <h1 class="my-4 text-center">Lattitude vs. Temperature</h1>
+      <hr>
+
+      <!-- Index page content -->
+      <div class="row">
+
+        <div class="col-md-12 text-center">
+          <img class="img-fluid" src="png_files/Temperature_v_Lattitude.png" alt="">
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+      <!-- Analysis -->
+      <h3 class="my-4 text-center">Analysis</h3>
+      <hr>
+      <div class="row">
+
+        <div class="col-md-12">
+
+          <p>
+            The visual above shows temperature in degrees fahrenheit in relation to lattitude on 12/01/2017 when the data was pulled. 
+            There appears to be a curve formed with lower temperatures recorded at lattitudes further from the equator and higher lattitudes closer to the equator.
+            Temperatures to the south of the equator seem to be higher than north which makes sense given the time of year this analysis was conducted.
+          </p>
+
+        </div>
+
+      </div>
+      <!-- /.row -->
+    
+      <!-- Other Visual Thumbnails -->
+      <h3 class="my-4">More Visualizations</h3>
+      <hr>
+      <div class="row">
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="lat_v_temp.html">
+            <img class="img-fluid" src="png_files/Temperature_v_Lattitude.png" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="lat_v_hum.html">
+            <img class="img-fluid" src="png_files/Humidity_v_Lattitude.png" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="lat_v_cloud.html">
+            <img class="img-fluid" src="png_files/Cloudiness_v_Lattitude.png" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="lat_v_wind.html">
+            <img class="img-fluid" src="png_files/Wind_Speed_v_Lattitude.png" alt="">
+          </a>
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-4 bg-head-foot">
+      <div class="container">
+        <p class="m-0 text-center text-white">Brought to you by Stephen Tsoi-A-Sue</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
