@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Stephen Tsoi-A-Sue</title>
+
+    <!-- css references -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">  
+    <link href="../static/css/bootstrap-grid.css" rel="stylesheet">
+    <link href="../static/css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body class='background'>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-head-foot fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">Stephen Tsoi-A-Sue</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item active navbar-right dropdown">
+                <a class="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Data Models</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown03">
+                    <a class="dropdown-item text" href="https://sleepy-coast-60721.herokuapp.com/">Belly Button Biodiversity Dashboard</a>
+                    <a class="dropdown-item text" href="geomap.html">Earthquake Geo Mapping</a>
+                    <a class="dropdown-item text" href="lattitude_analysis.html">Lattitude Analysis</a>
+                    <a class="dropdown-item text" href="citibike.html">Visualizing Citibike Data</a>
+                </div>
+            </li>
+            
+            <li class="nav-item active">
+              <a class="nav-link text" href="contact.html">Contact</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class='container'>
+        <!-- Index page heading -->
+        <h1 class="my-4 text-center text">Visualizing Citibike Data</h1>
+        <hr>
+
+        <!-- row -->
+        <div class='row'>
+            <div class="col-md-12">
+                <p class='text'>I compiled <a href='https://www.citibikenyc.com/system-data' target='_blank'>citibike</a> ride data from 2013 to 2016 and used this to create a story in Tableau.</p>
+                <p class='text'>Below are some of the more interesting visuals from the tableau story.</p>
+                <p class='text'>Check out my <a href='https://github.com/stsoiasue/City_Bike_Visualized_-Tableau-' target='_blank'>GitHub Repo</a> for all of the visuals created and the code i used to clean and compile the data.</p>
+            </div>
+        </div>    
+        <!-- /.row -->
+
+        <!-- row -->
+        <div class="row">
+
+            <div class="col-md-12 text-center">
+                <img class="img-fluid" src="../static/images/female_ridership.png" alt="">
+                <p></p>
+                <p class='text'>This visual shows all rides separated by gender and indicates there are 3 times as many rides by males when compared to females. Additionally, the growth in female ridership from 2013 to 2016 is depicted with a particularly large spike from 2015 to 2016.</p>
+            </div>
+
+        </div>
+        <hr>
+        <!-- /.row -->
+            
+        <!-- row -->
+        <div class="row">
+
+            <div class="col-md-12 text-center">
+                <img class="img-fluid" src="../static/images/usage.png" alt="">
+                <p></p>
+                <p class='text'>This visual focuses on bike usage. The bubble plot shows heavily used bikes together with size and color proportional to the number of miles rode. There is also a box plot showing the variability of usage amongst all bikes and a horizonal bar chart showing the average ride distance to be just over 1.2 miles.</p>
+            </div>
+
+        </div>
+        <hr>
+        <!-- /.row -->
+
+        <!-- row -->
+        <div class="row">
+
+            <div class="col-md-12 text-center">
+                <img class="img-fluid" src="../static/images/peak_hrs.png" alt="">
+                <p></p>
+                <p class='text'>This visual shows the aggregated peak use hours for summer and winter months. Ridership is noticeably higher in the summer. However, both charts show a similar trend of increased ridership during normal commute hours for a standard 9-5 work day.</p>
+            </div>
+
+        </div>
+        <hr>
+        <!-- /.row -->
+
+        <!-- row -->
+        <div class="row">
+
+            <div class="col-md-12 text-center">
+                <img class="img-fluid" src="../static/images/all_stations.png" alt="">
+                <p></p>
+                <p class='text'>This visual shows all of the stations together with emphasis on the most frequent start and end stations.</p>
+            </div>
+
+        </div>
+        <hr>
+        <!-- /.row -->
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-head-foot">
+      <div class="container">
+        <p class="m-0 text-center text-white">Brought to you by Stephen Tsoi-A-Sue</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+  </body>
+
+</html>
